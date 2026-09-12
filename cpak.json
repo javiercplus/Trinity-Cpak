@@ -3,8 +3,8 @@
   "manifest_version": "3.0",
   "name": "Trinity Launcher",
   "description": "Launcher y gestor de contenido para Minecraft: Bedrock Edition en Linux. En x86_64 la versión máxima de Bedrock es 26.33; en ARM no hay límite.",
-  "version": "1.0.0",
-  "image": "ghcr.io/TU-USUARIO/trinity-launcher@sha256:REPLACE_WITH_IMAGE_DIGEST",
+  "version": "9.0.43",
+  "image": "ghcr.io/javiercplus/Trinity-Cpak@sha256:REPLACE_WITH_IMAGE_DIGEST",
   "binaries": [
     "/usr/local/bin/trinity",
     "/usr/local/bin/mcpelauncher-client",
