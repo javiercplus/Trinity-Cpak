@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
+  "name": "Trinity Launcher",
+  "description": "Launcher y gestor de contenido para Minecraft: Bedrock Edition en Linux. En x86_64 la versión máxima de Bedrock es 26.33; en ARM no hay límite.",
+  "version": "1.0.0",
+  "image": "ghcr.io/TU-USUARIO/trinity-launcher@sha256:REPLACE_WITH_IMAGE_DIGEST",
+  "binaries": [
+    "/usr/local/bin/trinity",
+    "/usr/local/bin/mcpelauncher-client",
+    "/usr/local/bin/mcpelauncher-client86",
+    "/usr/local/bin/mcpelauncher-webview",
+    "/usr/local/bin/mcpelauncher-extract",
+    "/usr/local/bin/mcpelauncher-error",
+    "/usr/local/bin/msa-daemon"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/com.trench.trinity.launcher.desktop"
+  ],
+  "form_factors": ["desktop"],
+  "dependencies": [],
+  "addons": [],
+  "idle_time": 0,
+  "override": {
+    "socketWayland": true,
+    "displayX11": true,
+    "deviceDri": true,
+    "deviceShm": true,
+    "deviceAll": true,
+    "socketPulseAudio": true,
+    "deviceAlsa": true,
+    "network": true,
+    "notification": true,
+    "openURI": true,
+    "filePicker": {
+      "openFile": true,
+      "openFolder": true,
+      "saveFile": true,
+      "persistent": true,
+      "containingFolder": true
+    },
+    "filesystem": [
+      { "path": "home",          "access": "read-write" },
+      { "path": "xdg-download",  "access": "read-write" },
+      { "path": "xdg-documents", "access": "read-write" },
+      { "path": "xdg-desktop",   "access": "read-write" },
+      { "path": "xdg-pictures",  "access": "read-write" },
+      { "path": "xdg-run/discord-ipc-0", "access": "read-write" }
+    ]
+  }
+}
