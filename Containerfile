@@ -2,9 +2,9 @@
 
 # ---------- Fuentes fijadas por hash ----------
 ARG APPIMAGE_URL=https://github.com/Trinity-LA/Trinity-Launcher/releases/download/latest/Trinity_Launcher-x86_64.AppImage
-ARG APPIMAGE_SHA256=
+ARG APPIMAGE_SHA256=b66bcb27d656a47d6ed4395da30a54743adc59a6d9a23d61308e9f304e29095e
 ARG MCPE_TAR_URL=https://huggingface.co/datasets/ccoffee20/trinity-installer/resolve/main/binarios.tar
-ARG MCPE_TAR_SHA256=
+ARG MCPE_TAR_SHA256=ce7a28812c63518ee6b2ba3aea2e1c7f2023116a22e651f6356a2e5567b72200
 
 # ---------- Etapa 1: AppImage (solo trinity + share + QML propio) ----------
 FROM debian:13-slim AS appimage
